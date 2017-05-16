@@ -2,13 +2,12 @@
 //  MSAPIBaseManager.h
 //  MarcusOC
 //
-//  Created by marcus on 16/6/27.
+//  Created by marcus on 16/11/15.
 //  Copyright © 2016年 marcus. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "MSNetWorkingManager.h"
-#import "MSHeader.h"
 
 @class MSAPIBaseManager;
 
@@ -29,11 +28,11 @@
 @interface MSAPIBaseManager : NSObject
 /****************************************入参*********************************************************/
 /**
- *  网络请求url (可拼接参数，但不建议)
+ *  网络请求requestUrl (可拼接参数，但不建议)
  *  不建议拼接请求参数，请求参数建议通过 MSAPIManagerParamSourceDelegate 赋值
  *  如果拼接了参数，同样的参数在MSAPIManagerParamSourceDelegate也赋值了，则会取MSAPIManagerParamSourceDelegate里的值
  */
-@property (nonatomic, strong) NSString *url;
+@property (nonatomic, strong) NSString *requestUrl;
 
 /** 网络请求类型*/
 @property (nonatomic, assign) MSAPIManagerRequestType requestType;
@@ -41,21 +40,19 @@
 /** 请求回调delegate*/
 @property (nonatomic, weak) id<MSAPIManagerApiCallBackDelegate> delegate;
 
-/**请求参数delegate*/
+/** 请求参数delegate*/
 @property (nonatomic, weak) id<MSAPIManagerParamSourceDelegate> paramSource;
+
+/** 同一个VC中，区分相同类的请求Manger**一般情况下无需使用 */
+@property (nonatomic, strong) NSString *requestMark;
+
 /***************************************入参**********************************************************/
 
-/*
- baseManager是不会去设置errorMessage的，派生的子类manager可能需要给controller提供错误信息。所以为了统一外部调用的入口，设置了这个变量。
- 派生的子类需要通过extension来在保证errorMessage在对外只读的情况下使派生的manager子类对errorMessage具有写权限。 .m文件定义为可读写
- */
 @property (nonatomic, copy, readonly) NSString *errorMessage;
 @property (nonatomic, readonly) MSAPIManagerErrorType errorType;
 @property (nonatomic, strong) id responseObject;
 
 //使用loadData这个方法来请求数据,这个方法会通过param source来获得参数，这使得参数的生成逻辑位于controller中的固定位置
 - (void)loadData;
-
-- (void)cancelAllRequest;
 
 @end

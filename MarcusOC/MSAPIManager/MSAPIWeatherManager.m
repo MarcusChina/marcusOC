@@ -17,7 +17,7 @@
     self = [super init];
     if (self) {
         self.requestType = MSAPIManagerRequestTypeGet;
-        self.url = WeatherHeaderURL;
+        self.requestUrl = WeatherHeaderURL;
     }
     
     return self;
