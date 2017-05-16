@@ -13,6 +13,8 @@
 		2C097E221CEAC4DE00324DF0 /* loading-hu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2C097E211CEAC4DE00324DF0 /* loading-hu.gif */; };
 		2C199C9D1CE96E4800303BBC /* MSComponent说明 in Resources */ = {isa = PBXBuildFile; fileRef = 2C199C9C1CE96E4800303BBC /* MSComponent说明 */; };
 		2C199CBA1CE9C20E00303BBC /* MSProgressManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C199CB91CE9C20E00303BBC /* MSProgressManager.m */; };
+		2C1C61701ECADC7500C6ECF3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C1C61721ECADC7500C6ECF3 /* Localizable.strings */; };
+		2C1C617B1ECADDF800C6ECF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C1C617D1ECADDF800C6ECF3 /* InfoPlist.strings */; };
 		2C2C77CF1D2B91E80029FD46 /* MSWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2C77CE1D2B91E80029FD46 /* MSWeatherModel.m */; };
 		2C2C77D21D2BBC3F0029FD46 /* UINavigationController+MSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2C77D11D2BBC3F0029FD46 /* UINavigationController+MSCategory.m */; };
 		2C33ACE31DB8BBCB00856B88 /* MSDiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C33ACE11DB8BBCB00856B88 /* MSDiscoveryViewController.m */; };
@@ -43,7 +45,6 @@
 		2C8468F51D251A7700D7FA49 /* icon_navibar_back_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8468F31D251A7700D7FA49 /* icon_navibar_back_white@2x.png */; };
 		2C8468F61D251A7700D7FA49 /* icon_navibar_back_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8468F41D251A7700D7FA49 /* icon_navibar_back_white@3x.png */; };
 		2CE1EAE71D338458006D36EC /* testModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1EAE51D338458006D36EC /* testModel.xcdatamodeld */; };
-		2CE477401CE5A04100BAB436 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CE4773F1CE5A04100BAB436 /* Localizable.strings */; };
 		2CE477501CE5A3B000BAB436 /* icon_tabbar_discovery_newMessage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CE477421CE5A3B000BAB436 /* icon_tabbar_discovery_newMessage@2x.png */; };
 		2CE477511CE5A3B000BAB436 /* icon_tabbar_discovery_newMessage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CE477431CE5A3B000BAB436 /* icon_tabbar_discovery_newMessage@3x.png */; };
 		2CE477521CE5A3B000BAB436 /* icon_tabbar_discovery_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CE477441CE5A3B000BAB436 /* icon_tabbar_discovery_normal@2x.png */; };
@@ -95,6 +96,11 @@
 		2C199C9C1CE96E4800303BBC /* MSComponent说明 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "MSComponent说明"; sourceTree = "<group>"; };
 		2C199CB81CE9C20E00303BBC /* MSProgressManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSProgressManager.h; sourceTree = "<group>"; };
 		2C199CB91CE9C20E00303BBC /* MSProgressManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSProgressManager.m; sourceTree = "<group>"; };
+		2C1C61711ECADC7500C6ECF3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2C1C61731ECADCD100C6ECF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C1C61741ECADCD200C6ECF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C1C617C1ECADDF800C6ECF3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		2C1C617E1ECADDFD00C6ECF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C2C77CD1D2B91E80029FD46 /* MSWeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSWeatherModel.h; sourceTree = "<group>"; };
 		2C2C77CE1D2B91E80029FD46 /* MSWeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSWeatherModel.m; sourceTree = "<group>"; };
 		2C2C77D01D2BBC3F0029FD46 /* UINavigationController+MSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+MSCategory.h"; sourceTree = "<group>"; };
@@ -154,7 +160,6 @@
 		2C8468F41D251A7700D7FA49 /* icon_navibar_back_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_navibar_back_white@3x.png"; sourceTree = "<group>"; };
 		2C9EAB5B1D2223C50019F017 /* MSEnums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSEnums.h; sourceTree = "<group>"; };
 		2CE1EAE61D338458006D36EC /* testModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testModel.xcdatamodel; sourceTree = "<group>"; };
-		2CE4773F1CE5A04100BAB436 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		2CE477421CE5A3B000BAB436 /* icon_tabbar_discovery_newMessage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_discovery_newMessage@2x.png"; sourceTree = "<group>"; };
 		2CE477431CE5A3B000BAB436 /* icon_tabbar_discovery_newMessage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_discovery_newMessage@3x.png"; sourceTree = "<group>"; };
 		2CE477441CE5A3B000BAB436 /* icon_tabbar_discovery_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_discovery_normal@2x.png"; sourceTree = "<group>"; };
@@ -469,7 +474,8 @@
 		2CE4773E1CE5A04100BAB436 /* Strings */ = {
 			isa = PBXGroup;
 			children = (
-				2CE4773F1CE5A04100BAB436 /* Localizable.strings */,
+				2C1C617D1ECADDF800C6ECF3 /* InfoPlist.strings */,
+				2C1C61721ECADC7500C6ECF3 /* Localizable.strings */,
 			);
 			path = Strings;
 			sourceTree = "<group>";
@@ -778,9 +784,10 @@
 				2CE4776E1CE5A66D00BAB436 /* 项目说明 in Resources */,
 				2CE4775A1CE5A3B000BAB436 /* icon_tabbar_my_normal@2x.png in Resources */,
 				2CE477531CE5A3B000BAB436 /* icon_tabbar_discovery_normal@3x.png in Resources */,
-				2CE477401CE5A04100BAB436 /* Localizable.strings in Resources */,
+				2C1C61701ECADC7500C6ECF3 /* Localizable.strings in Resources */,
 				2CE477551CE5A3B000BAB436 /* icon_tabbar_discovery_selected@3x.png in Resources */,
 				2C8468F61D251A7700D7FA49 /* icon_navibar_back_white@3x.png in Resources */,
+				2C1C617B1ECADDF800C6ECF3 /* InfoPlist.strings in Resources */,
 				2C8468DB1D24EC6C00D7FA49 /* icon_navibar_back_red@3x.png in Resources */,
 				2CE4775C1CE5A3B000BAB436 /* icon_tabbar_my_selected@2x.png in Resources */,
 				2C3726161D054EAA00255A9B /* MSWeatherViewController.xib in Resources */,
@@ -924,6 +931,26 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		2C1C61721ECADC7500C6ECF3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C1C61711ECADC7500C6ECF3 /* zh-Hans */,
+				2C1C61731ECADCD100C6ECF3 /* en */,
+				2C1C61741ECADCD200C6ECF3 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		2C1C617D1ECADDF800C6ECF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C1C617C1ECADDF800C6ECF3 /* zh-Hans */,
+				2C1C617E1ECADDFD00C6ECF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		2C4EC2051CE5812D00D6AF6B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -939,6 +966,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -984,6 +1012,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

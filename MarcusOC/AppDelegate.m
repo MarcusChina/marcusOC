@@ -24,7 +24,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     MSRootViewController *rootViewController = [[MSRootViewController alloc]init];
-    self.window.rootViewController = rootViewController;
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:rootViewController];
+    self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
 
     [self setupFrameworks];

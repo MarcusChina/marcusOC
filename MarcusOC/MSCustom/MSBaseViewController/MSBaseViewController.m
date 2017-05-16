@@ -35,7 +35,6 @@ typedef NS_ENUM(NSInteger, MSViewControllerState) {
     //初始化 默认值
     self.firstAppeared = YES;
     self.navigationBarHidden = NO;
-    self.tabBarHidden = YES;
     self.navigationBarColor = color_navBar_Tint;
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: color_white,
                                                                     NSFontAttributeName: [UIFont boldSystemFontOfSize:18]};
@@ -52,10 +51,6 @@ typedef NS_ENUM(NSInteger, MSViewControllerState) {
     
     if (self.navigationController.navigationBarHidden != self.isNavigationBarHidden) {
         [self.navigationController setNavigationBarHidden:self.isNavigationBarHidden animated:animated];
-    }
-    
-    if (self.tabBarController.tabBar.hidden != self.isTabBarHidden) {
-        self.tabBarController.tabBar.hidden = self.isTabBarHidden;
     }
     
     if (self.navigationBarColor) {

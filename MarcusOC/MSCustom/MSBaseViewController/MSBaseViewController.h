@@ -14,10 +14,7 @@
  *  navigationBar 是否隐藏 默认显示 (NO)
  */
 @property (nonatomic, getter = isNavigationBarHidden) BOOL navigationBarHidden;
-/**
- *  tabBar 是否隐藏 默认隐藏 (YES)
- */
-@property (nonatomic, getter = isTabBarHidden) BOOL tabBarHidden;
+
 /**
  *  navigationBar 颜色
  */

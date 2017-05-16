@@ -24,7 +24,6 @@
     [super viewDidLoad];
     
     self.navigationBarHidden = YES;
-    self.tabBarHidden = NO;
 
     [self createCoreDataTable];
 

@@ -32,14 +32,18 @@
 #pragma mark - private method
 //加载tabbar上的ViewController
 - (void)loadSubView {
-    //首页
-    UINavigationController *homeNav = [[UINavigationController alloc]initWithRootViewController:[[MSHomeViewController alloc] init]];
-    //发现
-    UINavigationController *discoveryNav = [[UINavigationController alloc]initWithRootViewController:[[MSDiscoveryViewController alloc] init]];
-    //我的
-    UINavigationController *myNav = [[UINavigationController alloc]initWithRootViewController:[[MSMyViewController alloc] init]];
+//    //首页
+//    UINavigationController *homeNav = [[UINavigationController alloc]initWithRootViewController:[[MSHomeViewController alloc] init]];
+//    //发现
+//    UINavigationController *discoveryNav = [[UINavigationController alloc]initWithRootViewController:[[MSDiscoveryViewController alloc] init]];
+//    //我的
+//    UINavigationController *myNav = [[UINavigationController alloc]initWithRootViewController:[[MSMyViewController alloc] init]];
     
-    self.viewControllers = @[homeNav,discoveryNav,myNav];
+    MSHomeViewController *home = [[MSHomeViewController alloc] init];
+    MSDiscoveryViewController *discovery = [[MSDiscoveryViewController alloc] init];
+    MSMyViewController *my = [[MSMyViewController alloc] init];
+    
+    self.viewControllers = @[home,discovery,my];
     
     UITabBarItem *tabBarItem0 = [self.tabBar.items objectAtIndex:0];
     UITabBarItem *tabBarItem1 = [self.tabBar.items objectAtIndex:1];
